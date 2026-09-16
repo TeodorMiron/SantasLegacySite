@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================ SEO ============================ -->
+<title>Santa's Legacy - a cosy Christmas idle village game | Pixel Studio</title>
+<meta name="description" content="Run Santa's workshop in Santa's Legacy, a cosy Christmas idle game. Build an elf village, name every elf, play seven festive minigames and retire for Legacy Stars. Wishlist on Steam.">
+<link rel="canonical" href="https://example.com/">
+<meta name="author" content="Pixel Studio">
+<meta name="theme-color" content="#0b1726">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pixel Studio">
+<meta property="og:title" content="Santa's Legacy - a cosy Christmas idle village game">
+<meta property="og:description" content="Build an elf village that makes gifts while you sleep. Seven minigames, forty skills, and a Christmas you can retire from. Wishlist on Steam.">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:image" content="https://example.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A snowy low-poly North Pole village lit by workshop windows, with the words You are Santa.">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Santa's Legacy - a cosy Christmas idle village game">
+<meta name="twitter:description" content="Build an elf village that makes gifts while you sleep. Seven minigames, forty skills, and a Christmas you can retire from.">
+<meta name="twitter:image" content="https://example.com/assets/img/og-image.jpg">
+
+<!-- Icons & manifest -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Critical assets -->
+<link rel="preload" href="assets/fonts/OleoScript-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Nunito-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/hero-1600.webp" imagesrcset="assets/img/hero-1000.webp 1000w, assets/img/hero-1600.webp 1600w, assets/img/hero-2400.webp 2400w" imagesizes="100vw" type="image/webp">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- ====================== Structured data ====================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://example.com/#studio",
+      "name": "Pixel Studio",
+      "url": "https://example.com/",
+      "logo": "https://example.com/assets/img/icon-512.png",
+      "description": "A small independent game studio making cosy, hand-built games."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com/#website",
+      "url": "https://example.com/",
+      "name": "Santa's Legacy",
+      "publisher": { "@id": "https://example.com/#studio" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://example.com/#game",
+      "name": "Santa's Legacy",
+      "url": "https://example.com/",
+      "description": "A cosy Christmas idle game. Build an elf village at the North Pole, split every named elf between crafting and hauling, play seven festive minigames, spend forty skills, and retire on Christmas Eve to bank Legacy Stars for the next run.",
+      "image": "https://example.com/assets/img/og-image.jpg",
+      "genre": ["Idle", "Incremental", "Simulation", "Casual", "City Builder"],
+      "gamePlatform": ["PC", "Microsoft Windows"],
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "Game",
+      "playMode": "SinglePlayer",
+      "inLanguage": ["en", "de", "fr", "es", "pt", "pt-BR"],
+      "author": { "@id": "https://example.com/#studio" },
+      "publisher": { "@id": "https://example.com/#studio" },
+      "trailer": {
+        "@type": "VideoObject",
+        "name": "Santa's Legacy - announcement trailer",
+        "description": "Seventy seconds of the North Pole: the village, the elves, the seven minigames and the sleigh leaving on Christmas Eve.",
+        "thumbnailUrl": "https://example.com/assets/img/trailer-poster.jpg",
+        "uploadDate": "2026-09-04",
+        "duration": "PT1M13S",
+        "contentUrl": "https://example.com/assets/video/santas-legacy-trailer-720p.mp4"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://example.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kind of game is Santa's Legacy?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is an idle / incremental village builder. Your elves make gifts whether you are watching or not; you decide what to build, who crafts, who hauls, which skills to buy and when to retire the whole run for a permanent bonus." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Santa's Legacy a clicker game?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Nothing asks you to click a cookie. Production runs on its own and the hands-on part is the seven minigames, which set a bonus multiplier for the year you play them in." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a free demo?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The demo covers the first six Christmases, including the minigames, the skill tree and your first Legacy Star. It is a Windows build and it is available from the Steam page." }
+        },
+        {
+          "@type": "Question",
+          "name": "What platforms does Santa's Legacy run on?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Windows 10 and 11 on Steam, with keyboard, mouse and full gamepad support. Other platforms have not been announced." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the game keep making gifts while it is closed?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Offline production is credited when you come back, capped at four hours by default and up to ten once you buy the Moonlight Shift skills." }
+        },
+        {
+          "@type": "Question",
+          "name": "What languages does Santa's Legacy support?",
+          "acceptedAnswer": { "@type": "Answer", "text": "English, German, French, Spanish, European Portuguese and Brazilian Portuguese." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap-wide site-header__inner">
+    <a class="brand" href="./" aria-label="Pixel Studio - Santa's Legacy home">
+      <img class="brand__mark" src="assets/img/icon-192.png" alt="" width="34" height="34" loading="eager" decoding="async">
+      <span class="brand__name">Santa's Legacy<span class="brand__sub">Pixel Studio</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="#trailer">Trailer</a></li>
+        <li><a href="#game">The game</a></li>
+        <li><a href="#minigames">Minigames</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="press.html">Press kit</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--sm header-cta" data-cta="header" href="https://store.steampowered.com/app/4006370/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-9.96 9.2l5.39 2.23a2.83 2.83 0 0 1 1.6-.49h.15l2.4-3.47v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.42 2.44v.12a2.84 2.84 0 0 1-5.62.55L2.4 14.9A10 10 0 1 0 12 2Zm-3.23 15.1.72.3a2.15 2.15 0 1 0 1.18-2.82l.76.31a1.58 1.58 0 1 1-1.2 2.92l-1.46-.71Zm9.83-5.9a2.52 2.52 0 1 0-2.52 2.52 2.52 2.52 0 0 0 2.52-2.52Zm-4.4 0a1.89 1.89 0 1 1 1.88 1.9 1.89 1.89 0 0 1-1.89-1.9Z"/></svg>
+      Wishlist on Steam
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================= HERO ============================= -->
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="hero__bg">
+    <picture>
+      <source type="image/webp" srcset="assets/img/hero-1000.webp 1000w, assets/img/hero-1600.webp 1600w, assets/img/hero-2400.webp 2400w" sizes="100vw">
+      <img src="assets/img/hero-1600.jpg" srcset="assets/img/hero-1000.jpg 1000w, assets/img/hero-1600.jpg 1600w, assets/img/hero-2400.jpg 2400w" sizes="100vw" alt="A low-poly North Pole village at dusk: lit workshops, pine trees, Santa's sleigh and the reindeer team on the snow." width="2400" height="1350" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="hero__scrim" aria-hidden="true"></div>
+  <canvas class="hero__snow" id="snowCanvas" aria-hidden="true"></canvas>
+
+  <div class="wrap hero__inner">
+    <p class="badge"><span class="badge__dot" aria-hidden="true"></span> Free demo out now on Steam</p>
+
+    <h1 class="hero__title" id="heroTitle">Santa's <span>Legacy</span></h1>
+    <p class="hero__tagline">Build the North Pole one workshop at a time, then hand it to the elves and let Christmas run itself.</p>
+
+    <div class="hero__actions">
+      <a class="btn" data-cta="hero-steam" href="https://store.steampowered.com/app/4006370/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-9.96 9.2l5.39 2.23a2.83 2.83 0 0 1 1.6-.49h.15l2.4-3.47v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.42 2.44v.12a2.84 2.84 0 0 1-5.62.55L2.4 14.9A10 10 0 1 0 12 2Zm-3.23 15.1.72.3a2.15 2.15 0 1 0 1.18-2.82l.76.31a1.58 1.58 0 1 1-1.2 2.92l-1.46-.71Zm9.83-5.9a2.52 2.52 0 1 0-2.52 2.52 2.52 2.52 0 0 0 2.52-2.52Zm-4.4 0a1.89 1.89 0 1 1 1.88 1.9 1.89 1.89 0 0 1-1.89-1.9Z"/></svg>
+        Wishlist on Steam
+      </a>
+      <a class="btn btn--ghost" href="#trailer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.14v13.72L19 12 8 5.14Z"/></svg>
+        Watch the trailer
+      </a>
+    </div>
+    <p class="hero__note">Windows on Steam &middot; single player &middot; no ads, no energy timers, nothing to buy twice.</p>
+
+    <ul class="stats">
+      <li class="stat"><div class="stat__n">7</div><div class="stat__l">Minigames</div></li>
+      <li class="stat"><div class="stat__n">40</div><div class="stat__l">Skills</div></li>
+      <li class="stat"><div class="stat__n">9</div><div class="stat__l">Workshop types</div></li>
+      <li class="stat"><div class="stat__n">6</div><div class="stat__l">Languages</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ TRAILER ============================ -->
+<section class="section section--night2" id="trailer" aria-labelledby="trailerH">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <p class="eyebrow">Announcement trailer</p>
+      <h2 class="h2" id="trailerH">Seventy seconds at the North Pole</h2>
+      <p class="lead" style="margin-inline:auto">The village, the elves, the seven minigames and the sleigh leaving on Christmas Eve - all captured in engine.</p>
+    </div>
+
+    <div class="player reveal" id="player">
+      <!-- No `controls` here: the custom poster overlay is the only affordance
+           until play is pressed, at which point main.js adds them. -->
+      <video id="trailerVideo" preload="none" playsinline
+             poster="assets/img/trailer-poster.jpg"
+             width="1280" height="720"
+             aria-label="Santa's Legacy announcement trailer">
+        <source src="assets/video/santas-legacy-trailer-720p.mp4" type="video/mp4">
+        <p>Your browser cannot play this video. <a href="assets/video/santas-legacy-trailer-720p.mp4">Download the trailer (MP4, 12 MB)</a>.</p>
+      </video>
+      <button class="player__btn" id="playerBtn" type="button">
+        <span class="player__play" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72L19 12 8 5.14Z"/></svg>
+        </span>
+        <span class="player__label">Play the trailer <span>&middot; 1:13</span></span>
+        <span class="sr-only">Play the Santa's Legacy announcement trailer</span>
+      </button>
+    </div>
+    <noscript>
+      <p style="text-align:center;margin-top:1.25rem"><a href="assets/video/santas-legacy-trailer-720p.mp4">Download the trailer (MP4, 12&nbsp;MB)</a></p>
+    </noscript>
+  </div>
+</section>
+
+<!-- =========================== PILLARS =========================== -->
+<section class="section section--snow" id="game" aria-labelledby="gameH">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <p class="eyebrow">What you actually do</p>
+      <h2 class="h2" id="gameH">An idle game with decisions in it</h2>
+      <p class="lead" style="margin-inline:auto">Christmas runs on a clock. Every year is Dec 25 to Dec 31, the elves work the whole week, and on the last day the sleigh leaves with whatever you managed to pack.</p>
+    </div>
+
+    <ul class="pillars">
+      <li class="pillar reveal">
+        <span class="pillar__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/></svg></span>
+        <h3>Build the village</h3>
+        <p>Nine kinds of workshop, paid for in cookies and Christmas spirit, placed on a grid where neighbours boost each other. An empty snowfield becomes a town you can watch working.</p>
+      </li>
+      <li class="pillar reveal">
+        <span class="pillar__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <h3>Staff it with elves</h3>
+        <p>Every elf has a name, a voice and a temperament. Diligent elves craft faster, Swift ones haul more - and each workshop asks you to split its crew between making gifts and carrying them.</p>
+      </li>
+      <li class="pillar reveal">
+        <span class="pillar__i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 2.9 6.26 6.6.72-4.95 4.5 1.37 6.52L12 16.8l-5.92 3.2 1.37-6.52L2.5 8.98l6.6-.72Z"/></svg></span>
+        <h3>Retire and start again</h3>
+        <p>When a run has given you everything it can, retire Santa. The years you played convert into Legacy Stars, and those buy permanent upgrades that make the next North Pole faster from the first minute.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================== FEATURES =========================== -->
+<section class="section" aria-labelledby="featH">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Inside the workshop</p>
+      <h2 class="h2" id="featH">Systems that talk to each other</h2>
+      <p class="lead">Your gift rate is a single number with seven things multiplied into it. Change any one of them and you feel it on the counter within a second.</p>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature__text">
+        <h3>Every elf is a person</h3>
+        <p>Open a workshop and you get a roster, not a headcount: names, traits and a live read on how many gifts are being made versus how many are actually reaching the sleigh. Put too many elves on the bench and the gifts pile up and spoil.</p>
+        <ul class="feature__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Diligent, Swift and Steady elves, each worth a different split</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Over two hundred voice lines, handed out by name</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Upgrade a workshop and its whole crew gets better at once</li>
+        </ul>
+      </div>
+      <figure class="feature__media" style="margin:0">
+        <picture>
+          <source type="image/webp" srcset="assets/img/shots/elf-inspector.webp">
+          <img src="assets/img/shots/elf-inspector.jpg" alt="The workshop inspector in Santa's Legacy listing elves by name with Diligent and Swift traits, split between crafting and transporting gifts." width="1600" height="900" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature__text">
+        <h3>Forty skills, nine branches</h3>
+        <p>Joy is spent on a tree where every rung is gated on the one above it. Production, logistics, cookies, experience, festive spirit - and two branches that do something stranger: one buys you a longer night away from the game, one makes every building in the village cheaper.</p>
+        <ul class="feature__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> A separate permanent tree bought with Legacy Stars</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> A level perk every five levels, picked from five boons</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> A breakdown screen showing exactly where your rate comes from</li>
+        </ul>
+      </div>
+      <figure class="feature__media" style="margin:0">
+        <picture>
+          <source type="image/webp" srcset="assets/img/shots/skill-tree.webp">
+          <img src="assets/img/shots/skill-tree.jpg" alt="The Santa's Legacy skill panel: nine branches down the left rail, owned, affordable and locked skills listed on the right." width="1600" height="900" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+
+    <div class="feature reveal">
+      <div class="feature__text">
+        <h3>Christmas under pressure</h3>
+        <p>A year can turn on you. A blizzard halves production with two days to go; a frenzy doubles it and dares you to spend. Christmas Orders want a specific number by a specific date, and the route you send the sleigh on trades a bigger payout against a wider spread of luck.</p>
+        <ul class="feature__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Four delivery routes, from the safe village run to Around the World</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Challenge runs: Silent Night, Short Winter, Deep Frost</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Elf errands that pay out one, four or eight hours later</li>
+        </ul>
+      </div>
+      <figure class="feature__media" style="margin:0">
+        <picture>
+          <source type="image/webp" srcset="assets/img/shots/blizzard.webp">
+          <img src="assets/img/shots/blizzard.jpg" alt="A blizzard warning over the working village in Santa's Legacy, with the clock reading December 31 and the End the Year button waiting." width="1600" height="900" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FEATURE GRID ======================== -->
+<section class="section section--night2" aria-labelledby="gridH">
+  <div class="wrap">
+    <div class="head head--center reveal">
+      <p class="eyebrow">Everything in the box</p>
+      <h2 class="h2" id="gridH">A full North Pole</h2>
+    </div>
+
+    <ul class="grid">
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127969;</span><h3>A village on a grid</h3><p>Place workshops so the right neighbours touch and the whole town produces more than the sum of its parts.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127877;</span><h3>Named elves with traits</h3><p>Over 150 elves walk the snow, each with a job, a personality and a voice that is always the same elf's.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127918;</span><h3>Seven minigames</h3><p>Drawn from a shuffle bag, so you see all seven before you see any of them twice. Each one sets the year's bonus.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#11088;</span><h3>Legacy Stars</h3><p>Retire a run and bank it. Permanent upgrades carry into every Christmas that follows.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127875;</span><h3>Offline progress</h3><p>Gifts keep arriving while the game is shut. Four hours by default, ten once the Moonlight Shift is bought.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#128239;</span><h3>Year events</h3><p>Blizzards, frenzies and calm years. You cannot plan the weather, only what you do about it.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#128233;</span><h3>Letters with consequences</h3><p>Children write in. What you send them comes back to you later, in their own words.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127942;</span><h3>Steam achievements</h3><p>Achievements, per-minigame leaderboards and cloud saves across your machines.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127918;</span><h3>Plays on a pad</h3><p>Keyboard, mouse and full gamepad support, including the camera and every menu.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127760;</span><h3>Six languages</h3><p>English, German, French, Spanish, and Portuguese in both European and Brazilian flavours.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#127925;</span><h3>Music and elf chatter</h3><p>A shuffled score per screen and a village that talks to itself while it works.</p></li>
+      <li class="card reveal"><span class="card__i" aria-hidden="true">&#128247;</span><h3>A card to share</h3><p>End a year and take a Christmas card of your village, framed over the town you built.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================== MINIGAMES =========================== -->
+<section class="section section--snow" id="minigames" aria-labelledby="mgH">
+  <div class="wrap-wide">
+    <div class="head head--center reveal">
+      <p class="eyebrow">Hands on the controls</p>
+      <h2 class="h2" id="mgH">Seven minigames, once each</h2>
+      <p class="lead" style="margin-inline:auto">Between Christmases you play one. It is drawn from a bag rather than at random, so every game comes up before any of them repeats - and your score becomes a multiplier on the year that follows.</p>
+    </div>
+
+    <ul class="mg-grid">
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-cookie-bake.webp"><img src="assets/img/thumbs/mg-cookie-bake.jpg" alt="Cookie Bake minigame: trays of cookies on the oven line." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>Cookie Bake</h3><p>Pull the tray at the moment the cookie is done. A second early is dough, a second late is charcoal.</p></div>
+      </li>
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-gift-wrap.webp"><img src="assets/img/thumbs/mg-gift-wrap.jpg" alt="Gift Wrap Rush minigame: presents moving along the wrapping line." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>Gift Wrap Rush</h3><p>Paper, ribbon, bow, next. The line does not slow down because you are new.</p></div>
+      </li>
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-naughty-nice.webp"><img src="assets/img/thumbs/mg-naughty-nice.jpg" alt="Naughty or Nice minigame: sorting children into two lists." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>Naughty or Nice</h3><p>Left or right, one child at a time, against a shot clock that does not care how sure you are.</p></div>
+      </li>
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-reindeer-rhythm.webp"><img src="assets/img/thumbs/mg-reindeer-rhythm.jpg" alt="Reindeer Rhythm minigame: notes falling towards the hit line." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>Reindeer Rhythm</h3><p>Nine reindeer, one beat. Keep the team in time and they pull harder all year.</p></div>
+      </li>
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-sleigh-dash.webp"><img src="assets/img/thumbs/mg-sleigh-dash.jpg" alt="Sleigh Dash minigame: the sleigh running downhill between obstacles." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>Sleigh Dash</h3><p>Downhill, fast, in the dark. Collect what you can and try not to meet a tree.</p></div>
+      </li>
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-pack-sleigh.webp"><img src="assets/img/thumbs/mg-pack-sleigh.jpg" alt="Pack the Sleigh minigame: fitting boxes of different shapes into the sleigh." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>Pack the Sleigh</h3><p>Boxes of awkward shapes, one sleigh, and the quiet certainty that it would have fitted the other way round.</p></div>
+      </li>
+      <li class="mg reveal">
+        <picture><source type="image/webp" srcset="assets/img/thumbs/mg-mailroom.webp"><img src="assets/img/thumbs/mg-mailroom.jpg" alt="North Pole Mailroom minigame: reading a child's letter and choosing a gift." width="760" height="428" loading="lazy" decoding="async"></picture>
+        <div class="mg__body"><h3>North Pole Mailroom</h3><p>Read the letter, pick the gift. Get it wrong and the child writes back about it next year.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================== SCREENSHOTS ========================== -->
+<section class="section" id="screenshots" aria-labelledby="ssH">
+  <div class="wrap-wide">
+    <div class="head head--center reveal">
+      <p class="eyebrow">Screenshots</p>
+      <h2 class="h2" id="ssH">All captured in engine</h2>
+      <p class="lead" style="margin-inline:auto">Nothing here is concept art. Click any shot to open it full size.</p>
+    </div>
+
+    <ul class="gallery" id="gallery">
+      <!-- data-full / data-cap are read by the lightbox in main.js -->
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/village-operation.jpg" data-cap="The whole operation running: 27 workshops, 163 elves, 16.6K gifts a second."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/village-operation.webp"><img src="assets/img/thumbs/village-operation.jpg" alt="A built-up North Pole village in Santa's Legacy with the resource HUD showing gifts, spirit and cookies." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>The whole operation</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/elf-inspector.jpg" data-cap="Every elf by name, with a trait, split between crafting and hauling."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/elf-inspector.webp"><img src="assets/img/thumbs/elf-inspector.jpg" alt="The workshop inspector listing named elves and their crafting or transport assignment." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>Elves by name</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/skill-tree.jpg" data-cap="Forty skills across nine branches, each rung gated on the one above."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/skill-tree.webp"><img src="assets/img/thumbs/skill-tree.jpg" alt="The skill tree panel with nine branches and their owned, affordable and locked skills." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>The skill tree</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/build-menu.jpg" data-cap="Nine workshop types, each with its cost in cookies and spirit and what it adds per second."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/build-menu.webp"><img src="assets/img/thumbs/build-menu.jpg" alt="The build menu showing the nine workshop types with their prices and production rates." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>The build menu</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/blizzard.jpg" data-cap="A blizzard halves production with days left on the clock."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/blizzard.webp"><img src="assets/img/thumbs/blizzard.jpg" alt="A blizzard year event warning over the village." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>Blizzard year</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/legacy-prestige.jpg" data-cap="Retire Santa and turn the years you played into permanent Legacy upgrades."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/legacy-prestige.webp"><img src="assets/img/thumbs/legacy-prestige.jpg" alt="The Legacy prestige screen with permanent upgrades bought using Legacy Stars." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>Legacy upgrades</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/reindeer-team.jpg" data-cap="The team in harness outside the workshops, waiting for the sleigh to fill."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/reindeer-team.webp"><img src="assets/img/thumbs/reindeer-team.jpg" alt="Santa's reindeer team in harness outside the lit workshops." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>The reindeer team</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/year-end.jpg" data-cap="The year is over: packed gifts convert to cookies and Christmas spirit."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/year-end.webp"><img src="assets/img/thumbs/year-end.jpg" alt="The end of year payout screen converting delivered gifts into cookies and spirit." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>End of the year</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/christmas-orders.jpg" data-cap="Christmas Orders: a number, a deadline, and a reward for hitting it."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/christmas-orders.webp"><img src="assets/img/thumbs/christmas-orders.jpg" alt="The Christmas Orders board listing gift targets and their deadlines." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>Christmas Orders</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/sleigh-tree.jpg" data-cap="Santa, the sleigh and a crowd of elves under the village tree."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/sleigh-tree.webp"><img src="assets/img/thumbs/sleigh-tree.jpg" alt="Low angle on Santa's sleigh, the reindeer and a crowd of elves beside the Christmas tree." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>Christmas Eve</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/village-top.jpg" data-cap="The village from above, once it stops being a snowfield."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/village-top.webp"><img src="assets/img/thumbs/village-top.jpg" alt="A high overview of the grown elf village in the snow." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>From above</figcaption></figure></button></li>
+      <li><button class="shot reveal" type="button" data-full="assets/img/shots/tree-closeup.jpg" data-cap="A decorated tree and a lit workshop - the quiet half of the game."><figure style="margin:0"><picture><source type="image/webp" srcset="assets/img/thumbs/tree-closeup.webp"><img src="assets/img/thumbs/tree-closeup.jpg" alt="Close view of a decorated Christmas tree beside a lit workshop." width="760" height="428" loading="lazy" decoding="async"></picture><figcaption>A quiet corner</figcaption></figure></button></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================= WINTER UPDATE ========================= -->
+<section class="section section--night2" aria-labelledby="updH">
+  <div class="wrap">
+    <div class="update">
+      <div class="reveal">
+        <p class="eyebrow">Latest update</p>
+        <h2 class="h2" id="updH">The Big Winter Update</h2>
+        <p class="lead">The largest patch the demo has had: the village got a voice, the elves got personalities, and the parts of the game that only existed in code finally got screens to live on.</p>
+        <ul class="tags">
+          <li class="tag">Elf voices &amp; music</li>
+          <li class="tag">Elves with personalities</li>
+          <li class="tag">Village planning grid</li>
+          <li class="tag">Elf errands</li>
+          <li class="tag">Challenge runs</li>
+          <li class="tag">Delivery routes</li>
+          <li class="tag">Six languages</li>
+          <li class="tag">Gamepad support</li>
+        </ul>
+      </div>
+      <div class="update__media reveal">
+        <picture>
+          <source type="image/webp" srcset="assets/img/winter-update.webp">
+          <img src="assets/img/winter-update.jpg" alt="The Big Winter Update banner for Santa's Legacy over the elf village." width="1200" height="675" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="section" id="faq" aria-labelledby="faqH">
+  <div class="wrap">
+    <div class="head reveal">
+      <p class="eyebrow">Questions</p>
+      <h2 class="h2" id="faqH">Before you wishlist</h2>
+    </div>
+
+    <div class="faq reveal">
+      <details>
+        <summary>What kind of game is Santa's Legacy?</summary>
+        <div class="faq__a"><p>An idle / incremental village builder. Your elves make gifts whether you are watching or not; you decide what to build, who crafts, who hauls, which skills to buy, and when to retire the whole run for a permanent bonus.</p></div>
+      </details>
+      <details>
+        <summary>Is it a clicker?</summary>
+        <div class="faq__a"><p>No. Nothing asks you to click a cookie ten thousand times. Production runs on its own - the hands-on parts are the seven minigames, the workshop crews and where you put each building.</p></div>
+      </details>
+      <details>
+        <summary>Is there a free demo?</summary>
+        <div class="faq__a"><p>Yes. The demo covers the first six Christmases, which is enough to reach the minigames, the skill tree and your first Legacy Star. It is a Windows build and it lives on the Steam page.</p></div>
+      </details>
+      <details>
+        <summary>What platforms will it run on?</summary>
+        <div class="faq__a"><p>Windows 10 and 11 on Steam, with keyboard, mouse and full gamepad support. Nothing else has been announced.</p></div>
+      </details>
+      <details>
+        <summary>Does it keep going while the game is closed?</summary>
+        <div class="faq__a"><p>It does. Offline production is credited when you come back, capped at four hours to begin with and ten once you have bought the Moonlight Shift branch. It is meant to cover a night's sleep, not a fortnight.</p></div>
+      </details>
+      <details>
+        <summary>Are there ads or in-app purchases?</summary>
+        <div class="faq__a"><p>None. No ads, no energy meters, no second currency you buy with real money. You get the whole game once.</p></div>
+      </details>
+      <details>
+        <summary>What languages is it in?</summary>
+        <div class="faq__a"><p>English, German, French, Spanish, European Portuguese and Brazilian Portuguese - and the Brazilian translation is a real one, not a copy of the European file.</p></div>
+      </details>
+      <details>
+        <summary>When does the full game come out?</summary>
+        <div class="faq__a"><p>No date yet. Wishlisting on Steam is the way to hear about it the day it happens.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STUDIO ============================ -->
+<section class="section section--snow" id="studio" aria-labelledby="studioH">
+  <div class="wrap">
+    <div class="studio">
+      <div class="reveal">
+        <img class="studio__mark" src="assets/img/icon-192.png" alt="Pixel Studio logo" width="88" height="88" loading="lazy" decoding="async">
+        <p class="eyebrow">The studio</p>
+        <h2 class="h2" id="studioH">Pixel Studio</h2>
+        <p class="lead">A small independent studio. We make cosy games with more going on under the hood than the art lets on - the kind of game you leave running in a second window and keep glancing back at.</p>
+        <p class="lead"><strong>Santa's Legacy</strong> is our first title. It is built in Unity, and it has been in the workshop long enough that the elves have names, opinions and a union.</p>
+        <p style="margin-top:1.5rem"><a class="btn btn--ghost" href="press.html">Press kit &amp; assets</a></p>
+      </div>
+      <div class="reveal">
+        <dl class="facts">
+          <div><dt>Title</dt><dd>Santa's Legacy</dd></div>
+          <div><dt>Developer</dt><dd>Pixel Studio</dd></div>
+          <div><dt>Publisher</dt><dd>Pixel Studio (self-published)</dd></div>
+          <div><dt>Genre</dt><dd>Idle / incremental village builder</dd></div>
+          <div><dt>Platform</dt><dd>Windows (Steam)</dd></div>
+          <div><dt>Players</dt><dd>Single player</dd></div>
+          <div><dt>Engine</dt><dd>Unity, Universal Render Pipeline</dd></div>
+          <div><dt>Languages</dt><dd>EN, DE, FR, ES, PT, PT-BR</dd></div>
+          <div><dt>Release</dt><dd>To be announced - demo available now</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== CTA BAND =========================== -->
+<section class="section cta-band" aria-labelledby="ctaH">
+  <div class="wrap">
+    <p class="eyebrow reveal">One button</p>
+    <h2 class="h2 reveal" id="ctaH">The sleigh leaves either way</h2>
+    <p class="lead reveal">Wishlisting tells Steam to tell you when it is out. It is the single most useful thing you can do for a small studio, and it costs you nothing.</p>
+    <div class="cta-band__actions reveal">
+      <a class="btn" data-cta="footer-steam" href="https://store.steampowered.com/app/4006370/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-9.96 9.2l5.39 2.23a2.83 2.83 0 0 1 1.6-.49h.15l2.4-3.47v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.42 2.44v.12a2.84 2.84 0 0 1-5.62.55L2.4 14.9A10 10 0 1 0 12 2Zm-3.23 15.1.72.3a2.15 2.15 0 1 0 1.18-2.82l.76.31a1.58 1.58 0 1 1-1.2 2.92l-1.46-.71Zm9.83-5.9a2.52 2.52 0 1 0-2.52 2.52 2.52 2.52 0 0 0 2.52-2.52Zm-4.4 0a1.89 1.89 0 1 1 1.88 1.9 1.89 1.89 0 0 1-1.89-1.9Z"/></svg>
+        Wishlist on Steam
+      </a>
+      <a class="btn btn--ghost" href="press.html">Press kit</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand" href="./" style="margin-bottom:1rem">
+          <img class="brand__mark" src="assets/img/icon-192.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+          <span class="brand__name">Santa's Legacy<span class="brand__sub">Pixel Studio</span></span>
+        </a>
+        <p style="color:var(--fg-dim);max-width:34ch;font-size:.9rem">A cosy Christmas idle game about running the North Pole and knowing when to hand it over.</p>
+      </div>
+      <div>
+        <h4>The game</h4>
+        <ul>
+          <li><a href="#trailer">Trailer</a></li>
+          <li><a href="#game">What you do</a></li>
+          <li><a href="#minigames">Minigames</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="#studio">About Pixel Studio</a></li>
+          <li><a href="press.html">Press kit</a></li>
+          <li><a href="https://store.steampowered.com/app/4006370/" target="_blank" rel="noopener" data-cta="footer-link">Steam page</a></li>
+          <li><a href="mailto:press@example.com">press@example.com</a></li>
+          <li><a href="privacy.html">Privacy &amp; cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bar">
+      <p style="margin:0">&copy; <span id="year">2026</span> Pixel Studio. All rights reserved.</p>
+      <p class="site-footer__legal" style="margin:0">Santa's Legacy and Pixel Studio are trademarks of Pixel Studio. Steam and the Steam logo are trademarks of Valve Corporation.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- =========================== LIGHTBOX =========================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <img id="lightboxImg" src="" alt="">
+  <p class="lightbox__cap" id="lightboxCap"></p>
+  <button class="lightbox__btn lightbox__close" id="lightboxClose" type="button" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lightbox__btn lightbox__prev" id="lightboxPrev" type="button" aria-label="Previous screenshot">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+  </button>
+  <button class="lightbox__btn lightbox__next" id="lightboxNext" type="button" aria-label="Next screenshot">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+  </button>
+</div>
+
+<!-- ======================== COOKIE CONSENT ======================== -->
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>We would like to use Google Analytics to count visits and see which pages people read. No tracking runs until you say yes. <a href="privacy.html">How we handle data</a>.</p>
+  <div class="consent__actions">
+    <button class="btn btn--sm btn--ghost" id="consentNo" type="button">Decline</button>
+    <button class="btn btn--sm" id="consentYes" type="button">Accept</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

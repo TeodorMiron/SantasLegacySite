@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Privacy &amp; cookies - Santa's Legacy | Pixel Studio</title>
+<meta name="description" content="How Pixel Studio handles data on the Santa's Legacy website: what Google Analytics collects, what it does not, and how to change or withdraw your consent.">
+<link rel="canonical" href="https://example.com/privacy.html">
+<meta name="theme-color" content="#0b1726">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/OleoScript-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Nunito-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap-wide site-header__inner">
+    <a class="brand" href="./" aria-label="Pixel Studio - Santa's Legacy home">
+      <img class="brand__mark" src="assets/img/icon-192.png" alt="" width="34" height="34" decoding="async">
+      <span class="brand__name">Santa's Legacy<span class="brand__sub">Pixel Studio</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a href="./#trailer">Trailer</a></li>
+        <li><a href="./#game">The game</a></li>
+        <li><a href="./#screenshots">Screenshots</a></li>
+        <li><a href="press.html">Press kit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Legal</p>
+    <h1>Privacy &amp; cookies</h1>
+    <p class="lead">The short version: this is a static website. It sets no cookies at all unless you accept analytics, and it never asks you for personal information.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(2rem,5vw,3.5rem)">
+  <div class="wrap prose">
+
+    <p><em>Last updated: <span id="updated">16 September 2026</span>.</em></p>
+
+    <h2>Who we are</h2>
+    <p>This site is published by Pixel Studio ("we"), the developer of Santa's Legacy. You can reach us at <a href="mailto:press@example.com">press@example.com</a> about anything on this page, including a request to see or delete data we hold about you.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing, unless you opt in. There is no contact form, no newsletter sign-up, no account and no comment section on this site, so there is nothing here that asks you for your name, your email address or any other personal detail.</p>
+    <p>If you accept the cookie notice, we load <strong>Google Analytics 4</strong>, which records:</p>
+    <ul>
+      <li>which pages you looked at and for how long;</li>
+      <li>roughly where you are (country or city level, derived from your IP address, which Google truncates before storing);</li>
+      <li>your browser, operating system and screen size;</li>
+      <li>the site or search that sent you here;</li>
+      <li>a small number of things you clicked: the Steam wishlist buttons, the trailer play button, screenshot opens and press-kit downloads.</li>
+    </ul>
+    <p>We use that to understand whether the site is working - which screenshots people look at, whether anyone reaches the wishlist button. We do not use it to identify you, we do not run advertising or remarketing on it, and we do not sell or share it with anyone else.</p>
+
+    <h2>What we never collect</h2>
+    <ul>
+      <li>Your name, email address, or any account details - we do not ask for them.</li>
+      <li>Payment information. If you buy the game, that happens on Steam, under <a href="https://store.steampowered.com/privacy_agreement/" target="_blank" rel="noopener">Valve's privacy policy</a>, and we never see your payment details.</li>
+      <li>Anything from the game itself. Santa's Legacy saves its progress to your own computer and, if you play through Steam, to Steam Cloud. It sends no telemetry to us.</li>
+    </ul>
+
+    <h2>Cookies</h2>
+    <p>Before you choose, this site stores nothing in your browser except the record of your choice itself.</p>
+    <ul>
+      <li><strong>Your consent choice</strong> is kept in <code>localStorage</code> under the key <code>sl_consent_v1</code>. It stays on your device, never leaves it, and exists only so we do not ask you again on every page.</li>
+      <li><strong>Google Analytics cookies</strong> (<code>_ga</code> and <code>_ga_*</code>) are set only after you press Accept. They expire after two years, or immediately if you decline or clear them.</li>
+    </ul>
+    <p>Fonts are served from this site, not from Google Fonts, so loading the page makes no request to any third party until you opt in.</p>
+
+    <h2>Changing your mind</h2>
+    <p>You can withdraw or grant consent at any time, and it takes effect immediately.</p>
+    <p><button class="btn btn--sm" id="consentReset" type="button">Change my cookie choice</button> <span id="consentState" style="margin-left:.75rem;color:var(--fg-dim);font-size:.9rem"></span></p>
+    <p>You can also block or delete cookies in your browser settings, or install <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google's opt-out add-on</a>, which stops Analytics on every site you visit.</p>
+
+    <h2>Your rights</h2>
+    <p>If you are in the UK, the EU or another region with comparable law, you have the right to ask what data we hold about you, to have it corrected or erased, to object to processing, and to complain to your data protection authority. Because we collect nothing that identifies you, in practice there is rarely anything to hand over - but write to <a href="mailto:press@example.com">press@example.com</a> and we will answer.</p>
+    <p>Our legal basis for analytics is your consent, which is why nothing loads until you give it.</p>
+
+    <h2>Other services</h2>
+    <p>Links to Steam take you to a site run by Valve Corporation, which has its own privacy policy and sets its own cookies. We have no control over what happens once you leave this site.</p>
+
+    <h2>Changes to this page</h2>
+    <p>If we change what we collect, we will update this page and the date at the top of it, and reset the consent notice so you are asked again.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__bar" style="border-top:0;padding-top:0">
+      <p style="margin:0">&copy; <span id="year">2026</span> Pixel Studio. All rights reserved.</p>
+      <p style="margin:0"><a href="./">Home</a> &middot; <a href="press.html">Press kit</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>We would like to use Google Analytics to count visits and see which pages people read. No tracking runs until you say yes.</p>
+  <div class="consent__actions">
+    <button class="btn btn--sm btn--ghost" id="consentNo" type="button">Decline</button>
+    <button class="btn btn--sm" id="consentYes" type="button">Accept</button>
+  </div>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

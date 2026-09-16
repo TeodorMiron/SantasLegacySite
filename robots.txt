@@ -1,0 +1,5 @@
+# Santa's Legacy - Pixel Studio
+User-agent: *
+Allow: /
+
+Sitemap: https://example.com/sitemap.xml

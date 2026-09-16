@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://example.com/assets/img/hero-1600.jpg</image:loc>
+      <image:title>The North Pole village in Santa's Legacy</image:title>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://example.com/assets/img/trailer-poster.jpg</video:thumbnail_loc>
+      <video:title>Santa's Legacy - announcement trailer</video:title>
+      <video:description>Seventy seconds at the North Pole: the village, the elves, the seven minigames and the sleigh leaving on Christmas Eve.</video:description>
+      <video:content_loc>https://example.com/assets/video/santas-legacy-trailer-720p.mp4</video:content_loc>
+      <video:duration>73</video:duration>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://example.com/press.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://example.com/privacy.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>
