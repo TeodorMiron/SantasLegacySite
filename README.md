@@ -40,11 +40,16 @@ python configure.py --url https://santaslegacy.com \
 |---|---|---|
 | `https://example.com` | canonical links, Open Graph tags, JSON-LD, `sitemap.xml`, `robots.txt` | Your live URL, no trailing slash |
 | `G-XXXXXXXXXX` | `assets/js/main.js` → `CONFIG.GA_MEASUREMENT_ID` | Your GA4 measurement ID |
-| `press@example.com` | footer, press page, privacy page | A real inbox you read |
+| `press@example.com` | footer, press page, privacy page, **and `fact-sheet.txt` inside the press-kit zip** | A real inbox you read |
 | `4006370` | every Steam link | Already correct — it is the app ID from `steam_appid.txt` |
 
 Every flag is optional and the script is safe to re-run: it reads the *current*
 value out of `index.html` first, so running it twice does not break anything.
+
+**One thing it cannot reach:** `assets/press/santas-legacy-presskit.zip` has a
+`fact-sheet.txt` inside it carrying the website URL and the press address. A
+grep over the repo will never show you a stale value in there. If either
+changes, rewrite that one entry in the zip as well.
 
 There is one more thing worth a human eye before going live: the hero badge
 says **"Free demo out now on Steam"** and the FAQ repeats it. That matches the
