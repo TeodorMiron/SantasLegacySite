@@ -14,7 +14,7 @@
     // Google Analytics 4 measurement ID. Create a property at
     // analytics.google.com -> Admin -> Data streams -> Web, copy the
     // "G-" ID and paste it here. Until it is set, nothing is loaded.
-    GA_MEASUREMENT_ID: 'G-XXXXXXXXXX',
+    GA_MEASUREMENT_ID: 'G-NNKBKQVN5S',
 
     // Show the consent banner before loading Analytics. Required in the
     // EU/UK. Set to false only if you have a different consent tool.
