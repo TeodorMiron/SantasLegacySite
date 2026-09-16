@@ -1,0 +1,10 @@
+# Normalise text in the repo; the browser does not care but CI checkouts do.
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.webp binary
+*.ico  binary
+*.mp4  binary
+*.zip  binary
+*.woff2 binary
