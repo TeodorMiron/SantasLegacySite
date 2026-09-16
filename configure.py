@@ -19,7 +19,10 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-EXTS = {".html", ".xml", ".txt", ".js", ".webmanifest", ".json", ".md"}
+# README.md is deliberately excluded: it documents the placeholders, so a
+# run that rewrote it would leave the table describing values that are no
+# longer placeholders.
+EXTS = {".html", ".xml", ".txt", ".js", ".webmanifest", ".json"}
 SKIP_DIRS = {".git", ".github", "node_modules", "assets/fonts", "assets/img", "assets/video", "assets/press"}
 
 
@@ -33,10 +36,10 @@ def files():
                 yield os.path.join(dirpath, f)
 
 
-def current(pattern, default):
-    """Read a value back out of index.html so re-runs work."""
+def current(pattern, default, source="index.html"):
+    """Read a value back out of the site itself, so re-runs work."""
     try:
-        with open(os.path.join(ROOT, "index.html"), encoding="utf-8") as fh:
+        with open(os.path.join(ROOT, source), encoding="utf-8") as fh:
             m = re.search(pattern, fh.read())
             return m.group(1) if m else default
     except OSError:
@@ -84,16 +87,18 @@ def main():
         if not re.match(r"^G-[A-Z0-9]{6,}$", args.ga):
             print(f"! {args.ga} does not look like a GA4 measurement ID (G-XXXXXXXXXX)", file=sys.stderr)
             return 2
-        old = current(r"GA_MEASUREMENT_ID: '([^']+)'", "G-XXXXXXXXXX")
-        old = old if old != args.ga else None
-        # main.js is the only file holding it
+        # main.js is the only file holding the live value; the sentinel
+        # G-XXXXXXXXXX inside idLooksReal() is a comparison, not config,
+        # and must survive untouched.
         js = os.path.join(ROOT, "assets", "js", "main.js")
+        old = current(r"GA_MEASUREMENT_ID: '([^']+)'", "G-XXXXXXXXXX",
+                      os.path.join("assets", "js", "main.js"))
         with open(js, encoding="utf-8") as fh:
             text = fh.read()
         text, n = re.subn(r"(GA_MEASUREMENT_ID: ')[^']+(')", r"\g<1>" + args.ga + r"\g<2>", text)
         with open(js, "w", encoding="utf-8", newline="") as fh:
             fh.write(text)
-        print(f"GA    {old or '(unchanged)'} -> {args.ga}")
+        print(f"GA    {old} -> {args.ga}")
         print(f"  assets/js/main.js        {n} x ga id")
         total += n
 
