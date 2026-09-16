@@ -14,6 +14,7 @@ privacy.html        Privacy & cookie notice (required once GA is live).
 404.html            Not-found page.
 configure.py        Stamps your domain / GA ID / email over the placeholders.
 tools/              Regenerates the images from the game repo (needs Pillow).
+docs/               An optional GitHub Actions deploy workflow (see below).
 assets/css/         One stylesheet.
 assets/js/          One script: nav, lightbox, trailer, snow, analytics.
 assets/fonts/       Oleo Script + Nunito, self-hosted and subsetted.
@@ -131,12 +132,23 @@ smooth scrolling and the snow.
 
 ### GitHub Pages (what this repo is set up for)
 
-1. Create an empty repository on GitHub and push this folder to `main`.
-2. Repository **Settings → Pages → Source: GitHub Actions**.
-3. `.github/workflows/deploy.yml` publishes on every push to `main`.
+1. Push this folder to `main`.
+2. Repository **Settings → Pages → Source: "Deploy from a branch"**, branch
+   `main`, folder `/ (root)`.
+3. That is it. Every push to `main` republishes; the first build takes a
+   minute or two.
 
 `.nojekyll` is present so Pages serves the files verbatim rather than running
-them through Jekyll.
+them through Jekyll — which matters, because a folder here is named `assets`
+and Jekyll has opinions about that.
+
+**Why no Actions workflow?** There is one, written and ready, at
+`docs/pages-workflow.yml` — but GitHub rejects any push that creates a file
+under `.github/workflows/` unless the credential carries the `workflow` OAuth
+scope, and a normal browser sign-in does not. A static site at the repo root
+gains nothing from it, so branch deployment is the default here. If you want
+the Actions route anyway, the header of that file has the three-step recipe
+(copy it in through GitHub's web editor, which has the scope).
 
 **A custom domain:** add a file called `CNAME` containing just your domain
 (e.g. `santaslegacy.com`), point a `CNAME` DNS record at

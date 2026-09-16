@@ -1,0 +1,52 @@
+# NOT ACTIVE WHERE IT SITS.
+#
+# GitHub refuses a push that creates a file under .github/workflows/ unless
+# the credential carries the `workflow` OAuth scope, which the sign-in this
+# repository was pushed with did not have. The site does not need it: Pages
+# serves this repository directly from the branch (see README, "Deploying").
+#
+# To switch to Actions-based deploys instead, copy this file to
+# .github/workflows/deploy.yml using GitHub's own web editor - "Add file" ->
+# "Create new file" on github.com has the scope that a local push lacks -
+# then set Settings -> Pages -> Source to "GitHub Actions".
+#
+name: Deploy to GitHub Pages
+
+# Publishes the site on every push to main. The repository has no build
+# step - what is in git is what gets served - so this just uploads the
+# working tree as the Pages artifact.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
